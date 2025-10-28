@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Sistema</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <!-- Menú Lateral -->
+    <nav class="menu-lateral">
+        <div class="logo">
+            <h2>[Nombre del Colegio]</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="admin-dashboard.html" class="menu-item"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="matricula.html" class="menu-item"><i class="fas fa-users"></i> Estudiantes</a></li>
+            <li><a href="cursos.html" class="menu-item"><i class="fas fa-book"></i> Cursos</a></li>
+            <li><a href="docentes.html" class="menu-item"><i class="fas fa-chalkboard-teacher"></i> Docentes</a></li>
+            <li><a href="configuracion.html" class="menu-item"><i class="fas fa-cogs"></i> Configuración</a></li>
+            <li><a href="login.html" class="menu-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+        <!-- Barra Superior -->
+        <header class="barra-superior">
+            <button class="btn-hamburguesa">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="usuario">
+                <span>Bienvenido, Carlos Administrador</span>
+            </div>
+        </header>
+
+        <!-- Área de Contenido -->
+        <main class="contenido-principal">
+            <h1>Configuración del Sistema</h1>
+            <div id="contenido">
+                <!-- Formulario de configuración del sistema -->
+                <p>Aquí puedes configurar los parámetros del sistema, como usuarios, roles y cursos.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
