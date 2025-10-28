@@ -1,0 +1,23 @@
+/* Barra Superior */
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barra-superior .btn-hamburguesa {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Usuario en Barra Superior */
+.barra-superior .usuario {
+    font-size: 16px;
+    color: #333333;
+}
+

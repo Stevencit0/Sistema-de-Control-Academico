@@ -1,0 +1,51 @@
+/* Gestión de Docentes */
+.contenido-principal {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-principal h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.contenido-principal .docentes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contenido-principal .docente-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.contenido-principal .docente-card h3 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.contenido-principal .docente-card p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.contenido-principal .docente-card button {
+    padding: 6px 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenido-principal .docente-card button:hover {
+    background-color: #0056b3;
+}
+

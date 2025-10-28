@@ -1,0 +1,108 @@
+/* Estilos Generales */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F7FA;
+}
+
+h1, h2, h3 {
+    color: #333333;
+}
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+.contenido-principal {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Barra Superior */
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barra-superior .btn-hamburguesa {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Usuario en Barra Superior */
+.barra-superior .usuario {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Menú Lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1A2C42;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.menu-lateral .logo h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.menu-lateral .menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-lateral .menu li {
+    padding: 15px 20px;
+}
+
+.menu-lateral .menu-item {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-lateral .menu-item i {
+    margin-right: 10px;
+}
+
+.menu-lateral .menu-item:hover {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+/* Enlace de Cerrar Sesión */
+.menu-lateral .menu-item:last-child {
+    margin-top: auto;
+    background-color: #FF4C4C;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.menu-lateral .menu-item:last-child:hover {
+    background-color: #E03B3B;
+}

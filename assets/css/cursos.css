@@ -1,0 +1,44 @@
+/* Gestión de Cursos */
+.contenido-principal {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-principal h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.contenido-principal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.contenido-principal table th,
+.contenido-principal table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.contenido-principal table th {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+.contenido-principal table td button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenido-principal table td button:hover {
+    background-color: #218838;
+}
+
