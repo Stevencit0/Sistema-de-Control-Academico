@@ -3,46 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Cursos</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/header.css">
+    <title>Login - Sistema de Control Académico</title>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
-    <!-- Menú Lateral -->
-    <nav class="menu-lateral">
-        <div class="logo">
-            <h2>[Nombre del Colegio]</h2>
-        </div>
-        <ul class="menu">
-            <li><a href="admin-dashboard.html" class="menu-item"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="matricula.html" class="menu-item"><i class="fas fa-users"></i> Estudiantes</a></li>
-            <li><a href="cursos.html" class="menu-item"><i class="fas fa-book"></i> Cursos</a></li>
-            <li><a href="docentes.html" class="menu-item"><i class="fas fa-chalkboard-teacher"></i> Docentes</a></li>
-            <li><a href="configuracion.html" class="menu-item"><i class="fas fa-cogs"></i> Configuración</a></li>
-            <li><a href="login.html" class="menu-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
-        </ul>
-    </nav>
-
-    <!-- Contenedor Principal -->
-    <div class="main-container">
-        <!-- Barra Superior -->
-        <header class="barra-superior">
-            <button class="btn-hamburguesa">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="usuario">
-                <span>Bienvenido, Carlos Administrador</span>
-            </div>
-        </header>
-
-        <!-- Área de Contenido -->
-        <main class="contenido-principal">
-            <h1>Gestión de Cursos</h1>
-            <p>Aquí se gestionan los cursos disponibles para los estudiantes.</p>
-        </main>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required><br><br>
+            
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required><br><br>
+            
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;">Credenciales incorrectas. Intenta nuevamente.</p>
     </div>
 
-    <script src="js/menu.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>
