@@ -1,65 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Docentes</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Estilos generales -->
-    <link rel="stylesheet" href="assets/css/sidebar.css"> <!-- Estilos del menú lateral -->
-    <link rel="stylesheet" href="assets/css/header.css"> <!-- Estilos de la barra superior -->
-    <link rel="stylesheet" href="assets/css/matricula.css"> <!-- Estilos para matrícula -->
-    <link rel="stylesheet" href="assets/css/cursos.css"> <!-- Estilos para gestión de cursos -->
-    <link rel="stylesheet" href="assets/css/docentes.css"> <!-- Estilos para gestión de docentes -->
-    <link rel="stylesheet" href="assets/css/estudiantes.css"> <!-- Estilos para gestión de estudiantes -->
-    <link rel="stylesheet" href="assets/css/configuracion.css"> <!-- Estilos para configuración -->
-    <link rel="stylesheet" href="assets/css/reportes.css"> <!-- Estilos para reportes -->
-    <link rel="stylesheet" href="assets/css/login.css"> <!-- Estilos para login -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Docentes - I.E.P. Militarizada</title>
+  <link rel="stylesheet" href="css/panel.css">
 </head>
 <body>
-    <!-- Menú Lateral -->
-    <nav class="menu-lateral">
-        <div class="logo">
-            <h2>I.E.P.M CRL JUAN VALER SANDOVAL</h2>
-        </div>
-        <ul class="menu">
-            <li><a href="admin-dashboard.html" class="menu-item"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-            <li><a href="matricula.html" class="menu-item"><i class="fas fa-users"></i> Estudiantes</a></li>
-            <li><a href="cursos.html" class="menu-item"><i class="fas fa-book"></i> Cursos</a></li>
-            <li><a href="docentes.html" class="menu-item"><i class="fas fa-chalkboard-teacher"></i> Docentes</a></li>
-            <li><a href="configuracion.html" class="menu-item"><i class="fas fa-cogs"></i> Configuración</a></li>
-            <li><a href="login.html" class="menu-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
-        </ul>
-    </nav>
-
-    <!-- Contenedor Principal -->
-    <div class="main-container">
-        <!-- Barra Superior -->
-        <header class="barra-superior">
-            <button class="btn-hamburguesa">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="usuario">
-                <span>Bienvenido, Carlos Administrador</span>
-            </div>
-        </header>
-
-        <!-- Área de Contenido -->
-        <main class="contenido-principal">
-            <h1>Gestión de Docentes</h1>
-            <div id="contenido">
-                <!-- Formulario de gestión de docentes -->
-                <p>Aquí se gestionan los docentes, sus horarios y cursos asignados.</p>
-            </div>
-        </main>
+  
+<header class="site-header">
+  <div class="brand">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="brand-text">
+      <div class="school-name">I.E.P. Militarizada</div>
+      <div class="school-sub">CRL. Juan Valer Sandoval</div>
     </div>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome para íconos -->
-    <script src="assets/js/menu.js"></script> <!-- JS para el menú lateral -->
-    <script src="assets/js/matricula.js"></script> <!-- JS para la matrícula -->
-    <script src="assets/js/estudiantes.js"></script> <!-- JS para gestionar estudiantes -->
-    <script src="assets/js/docentes.js"></script> <!-- JS para gestionar docentes -->
-    <script src="assets/js/configuracion.js"></script> <!-- JS para configuración -->
-    <script src="assets/js/reportes.js"></script> <!-- JS para reportes -->
-    <script src="assets/js/login.js"></script> <!-- JS para login -->
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Inicio</a>
+    <a href="admin.html">Admin</a>
+    <a href="configuracion.html">Configuración</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="docentes.html">Docentes</a>
+    <a href="estudiantes.html">Estudiantes</a>
+    <a href="matricula.html">Matrícula</a>
+    <a href="reporte.html">Reporte</a>
+    <a href="login.html" class="logout">Cerrar sesión</a>
+  </nav>
+</header>
+<main class='content'><h1>Docentes</h1><p>Información de docentes.</p></main><footer class='site-footer'>© 2025 I.E.P. Militarizada «CRL. Juan Valer Sandoval»</footer>
+  
 </body>
 </html>

@@ -1,34 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>I.E.P. Militarizada - Iniciar Sesión</title>
-<link rel="stylesheet" href="login.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - I.E.P. Militarizada</title>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+  
+<header class="login-header">
+  <img src="images/logo.png" alt="Escudo" class="logo">
+  <h1>I.E.P. Militarizada<br><span>CRL. Juan Valer Sandoval</span></h1>
+</header>
+<main class="login-container">
+  <form id="loginForm" class="login-form">
+    <label>Usuario
+      <input type="text" id="user" required>
+    </label>
+    <label>Contraseña
+      <input type="password" id="pass" required>
+    </label>
+    <button type="submit">Ingresar</button>
+  </form>
+  <p class="hint">Acceso exclusivo para administradores</p>
+</main>
 
-  <main class="login-card">
-    <img src="juan valer logo.png" alt="Escudo I.E.P." class="logo">
-
-    <h1>I.E.P. Militarizada</h1>
-    <h2>"CRL. Juan Valer Sandoval"</h2>
-
-    <form>
-      <div class="form-group">
-        <input type="email" placeholder="Correo institucional" required>
-      </div>
-      <div class="form-group">
-        <input type="password" placeholder="Contraseña" required>
-      </div>
-      <button type="submit">Ingresar</button>
-    </form>
-
-    <p class="links">
-      <a href="#">¿Olvidaste tu contraseña?</a> | 
-      <a href="#">Crear cuenta</a>
-    </p>
-  </main>
+  
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const u = document.getElementById('user').value.trim();
+  const p = document.getElementById('pass').value.trim();
+  if(u==='admin' && p==='1234'){
+    window.location.href = 'index.html';
+  } else {
+    alert('Usuario o contraseña incorrectos');
+  }
+});
+</script>
 
 </body>
 </html>
