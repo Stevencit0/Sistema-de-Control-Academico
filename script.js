@@ -1,10 +1,10 @@
-document.getElementById("loginForm").addEventListener("submit", function(e){
-  e.preventDefault();
-  const user = document.getElementById("username").value.trim();
-  const pass = document.getElementById("password").value.trim();
-  if (user === "admin450" && pass === "dba3/*890") {
-    window.location.href = "admin.html";
-  } else {
-    alert("Usuario o contraseña incorrectos");
-  }
-});
+function login() {
+    const user = document.getElementById("user").value;
+    const pass = document.getElementById("pass").value;
+
+    if (user === "admin" && pass === "admin") {
+        window.location.href = "admin.html";
+    } else {
+        alert("Usuario o contraseña incorrectos");
+    }
+}
