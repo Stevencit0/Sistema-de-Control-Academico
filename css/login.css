@@ -1,0 +1,52 @@
+/* Estilos específicos para el login */
+.login-container {
+    background: var(--white);
+    width: 360px;
+    margin: 6% auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.login-container .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    color: var(--primary-light);
+    margin-bottom: 8px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 15px;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: var(--primary-dark);
+}
+
+.login-footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #555;
+}

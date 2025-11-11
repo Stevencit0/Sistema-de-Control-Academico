@@ -1,0 +1,13 @@
+/* Variables y colores globales */
+:root {
+    --primary-color: #155d33;
+    --primary-dark: #0e4424;
+    --primary-light: #0b3d2e;
+    --background-color: #f4f6f5;
+    --text-color: #0b3d2e;
+    --white: #fff;
+    --border-color: #cbd5c0;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --border-radius: 6px;
+    --font-family: 'Segoe UI', sans-serif;
+}

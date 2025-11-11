@@ -1,0 +1,32 @@
+/* Estilos para la barra superior de navegación */
+.topbar {
+    background: var(--white);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav img {
+    width: 45px;
+    margin-right: 12px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: text-decoration 0.3s ease;
+}
+
+.nav-links a:hover,
+.cerrar-sesion {
+    text-decoration: underline;
+}
