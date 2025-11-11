@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f5;
+    margin: 0;
+    padding: 0;
+    color: #0b3d2e;
+}
+
+.login-container {
+    background: #fff;
+    width: 360px;
+    margin: 6% auto;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container .logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    color: #0b3d2e;
+    margin-bottom: 8px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #cbd5c0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.login-container button {
+    width: 100%;
+    background-color: #155d33;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-container button:hover {
+    background-color: #0e4424;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #555;
+}
+
+.topbar {
+    background: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #155d33;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav img {
+    width: 45px;
+    margin-right: 12px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #155d33;
+    font-weight: 500;
+}
+
+nav a:hover, .cerrar {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+}
