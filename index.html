@@ -1,22 +1,48 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso Administrador - I.E.P. Militarizada</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>Intranet - Login</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-    <div class="login-container">
-        <img src="escudo.png" alt="Escudo" class="logo">
-        <h2>I.E.P. Militarizada<br>“CRL. Juan Valer Sandoval”</h2>
-        <p>Acceso de administrador</p>
-        <input type="text" id="user" placeholder="Usuario">
-        <input type="password" id="pass" placeholder="Contraseña">
-        <button onclick="login()">Ingresar</button>
-        <footer>© 2025 - Sistema Institucional</footer>
-    </div>
+
+    <header class="header">
+        <h1>CRL. Juan Valer Sandoval</h1>
+    </header>
+
+    <section class="wave"></section>
+
+    <main class="contenedor">
+
+        <h2 class="titulo"></h2>
+
+        <section class="opciones">
+
+            <article class="card" onclick="login('administrativo')">
+                <img src="Icono administrativo.png" class="icono" alt="Icono administrativo">
+                <p>ADMINISTRATIVO</p>
+                
+            </article>
+
+            <article class="card" onclick="login('docente')">
+                <img src="Icono profesor.png" class="icono" alt="Icono docente">
+                <p>DOCENTE</p>
+            </article>
+
+            <article class="card" onclick="login('estudiante')">
+                <img src="Icono alumno.png" class="icono" alt="Icono estudiante">
+                <p>ESTUDIANTE</p>
+            </article>
+
+        </section>
+
+    </main>
+
     <script src="script.js"></script>
+
 </body>
 </html>
+
+

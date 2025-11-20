@@ -1,10 +1,5 @@
-function login() {
-    const user = document.getElementById("user").value;
-    const pass = document.getElementById("pass").value;
-
-    if (user === "admin" && pass === "admin") {
-        window.location.href = "admin.html";
-    } else {
-        alert("Usuario o contraseña incorrectos");
-    }
+function login(tipo) {
+    alert("Ingresando como: " + tipo.toUpperCase());
+    // Aquí podrías redirigir:
+    // window.location.href = tipo + "/login.html";
 }
