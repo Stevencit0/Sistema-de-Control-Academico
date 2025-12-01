@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Login - Estudiante</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Estudiante</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="login-page">
-<div class="login-wrapper">
-    <div class="login-card">
-        <img src="escudo.png" class="login-logo" alt="logo">
-        <h2>Estudiante</h2>
-        <div class="inputs">
-            <input id="username" placeholder="Usuario" autocomplete="username">
-            <input id="password" type="password" placeholder="Contraseña" autocomplete="current-password">
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="escudo.png" alt="Escudo del Colegio" class="school-logo">
         </div>
-        <button id="loginBtn">Ingresar</button>
-        <p class="msg" id="msg"></p>
-        <a href="index.html" class="back-link">Volver</a>
+        
+        <h2 class="login-title">Estudiante</h2>
+        
+        <div class="demo-credentials">
+            <p><strong>Credenciales de demostración:</strong></p>
+            <p>Usuario: <strong>estudiante</strong></p>
+            <p>Contraseña: <strong>estudiante123</strong></p>
+        </div>
+        
+        <form id="loginForm" onsubmit="loginEstudiante(event)">
+            <div class="form-group">
+                <input type="text" id="usuario" class="form-input" placeholder="Usuario" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="contrasena" class="form-input" placeholder="Contraseña" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Ingresar</button>
+        </form>
     </div>
-</div>
-
-<script src="auth.js"></script>
-<script>
-const role = "estudiante";
-document.getElementById('loginBtn').addEventListener('click', ()=> {
-    authenticate(role);
-});
-</script>
+    
+    <script src="login.js"></script>
 </body>
 </html>
