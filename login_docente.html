@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="escudo.png" alt="Escudo del Colegio" class="school-logo">
+        </div>
+        
+        <h2 class="login-title">Docente</h2>
+        
+        <form id="loginForm" onsubmit="loginAdmin(event)">
+            <div class="form-group">
+                <input type="text" id="usuario" class="form-input" placeholder="Usuario" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="contrasena" class="form-input" placeholder="Contraseña" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Ingresar</button>
+            <a href="roles.html" class="link-volver">Volver</a>
+        </form>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
 
+</body>
+</html>
