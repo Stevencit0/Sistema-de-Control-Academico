@@ -1,47 +1,93 @@
-import './index.postcss.css';
- // O donde tengas tus estilos CSS
-// Si tienes la imagen en la carpeta 'src', impórtala así:
-// import escudo from './assets/escudo.png'; 
-// Si la imagen está en la carpeta 'public', usa la ruta directa como abajo.
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+/* =======================
+        RUTAS PÚBLICAS
+========================== */
+import Home from "./Home";
+import Bienvenida from "./Bienvenida";
+import Roles from "./Roles";
 
-  // Función para manejar el click del botón
-  const goRoles = () => {
-    console.log("Navegando a Bienvenida...");
-    // Aquí iría tu lógica de navegación, por ejemplo: navigate('/bienvenida')
-    window.location.href = '/bienvenida'; // Ejemplo simple
-  };
+/* ===== Logins ===== */
+import LoginAdministrativo from "./admin/handleSubmit";
+import LoginDocente from "./docente/LoginDocente";
+import LoginEstudiante from "./estudiante/LoginEstudiante";
 
+/* =======================
+        ADMINISTRATIVO
+========================== */
+import AdminLayout from "./admin/AdminLayout";
+import InicioAdminView from "./admin/AdminInicio";
+import AdminPerfil from "./admin/AdminPerfil";
+import AdminOpciones from "./admin/AdminOpciones";
+import MatriculasView from "./admin/MatriculasView";
+import EstudiantesView from "./admin/EstudiantesView";
+import DocentesView from "./admin/DocentesView";
+import CursosView from "./admin/CursosView";
+
+/* ======== DOCENTE ======== */
+import DocenteLayout from "./docente/DocenteLayout";
+import DocenteInicio from "./docente/DocenteInicio";
+// import DocenteCursos from "./docente/DocenteCursos";
+// Aquí luego agregaremos:
+// import DocenteCursos from "./docente/DocenteCursos";
+// import DocenteAsistencias from "./docente/DocenteAsistencias";
+// import DocenteCalificaciones from "./docente/DocenteCalificaciones";
+
+export default function App() {
   return (
-    // Usamos un div contenedor en lugar de body
-    <div className="welcome-bg min-h-screen flex flex-col items-center justify-center">
-      
-      <div className="welcome-card text-center p-8 bg-white rounded-lg shadow-lg">
-        <div className="logo-box mb-4 flex justify-center">
-          {/* Asegúrate de que escudo.png esté en la carpeta public o impórtalo */}
-          <img src="/src/escudo.png" alt="Logo colegio" className="h-32 w-auto" />
-        </div>
+    <Routes>
 
-        <h1 className="title-main text-3xl font-bold text-gray-800 mb-2">
-          Bienvenidos al Sistema del Colegio
-        </h1>
-        <h2 className="title-sub text-xl text-gray-600 mb-6">
-          CRL. Juan Valer Sandoval
-        </h2>
+      {/* =======================
+              PÚBLICO
+      ========================== */}
+      <Route path="/" element={<Home />} />
+      <Route path="/bienvenida" element={<Bienvenida />} />
+      <Route path="/roles" element={<Roles />} />
 
-        <button 
-          onClick={goRoles} 
-          className="btn-enter bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded transition duration-300 shadow-md"
-        >
-          Ingresar al Sistema
-        </button>
-      </div>
+      {/* Logins */}
+      <Route path="/login-administrativo" element={<LoginAdministrativo />} />
+      <Route path="/login-docente" element={<LoginDocente />} />
+      <Route path="/login-estudiante" element={<LoginEstudiante />} />
 
-    </div>
-  )
+      {/* =======================
+          ÁREA ADMINISTRATIVA
+      ========================== */}
+      <Route path="/admin" element={<AdminLayout />}>
+
+        {/* Página por defecto para /admin */}
+        <Route index element={<InicioAdminView />} />
+
+        {/* Rutas del menú */}
+        <Route path="inicio" element={<InicioAdminView />} />
+        <Route path="perfil" element={<AdminPerfil />} />
+        <Route path="opciones" element={<AdminOpciones />} />
+        <Route path="matriculas" element={<MatriculasView />} />
+        <Route path="estudiantes" element={<EstudiantesView />} />
+        <Route path="docentes" element={<DocentesView />} />
+        <Route path="cursos" element={<CursosView />} />
+
+      </Route>
+
+      {/* =======================
+              ÁREA DOCENTE
+      ========================== */}
+      <Route path="/docente" element={<DocenteLayout />}>
+
+        {/* Página por defecto para /docente */}
+        <Route index element={<DocenteInicio />} />
+
+        {/* Inicio */}
+        <Route path="inicio" element={<DocenteInicio />} />
+
+        {/* Luego agregaremos más: */}
+        {/*
+          <Route path="cursos" element={<DocenteCursos />} />
+          <Route path="asistencias" element={<DocenteAsistencias />} />
+          <Route path="calificaciones" element={<DocenteCalificaciones />} />
+        */}
+      </Route>
+
+    </Routes>
+  );
 }
-
-export default App;
-
 

@@ -1,0 +1,64 @@
+/* src/docente/docente.css */
+
+.docente-root {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f4f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.docente-sidebar {
+  width: 260px;
+  background: #0f172a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.docente-sidebar-header {
+  padding: 24px 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.docente-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  border: 3px solid #ffffff;
+  margin: 0 auto 8px;
+  background: #1e293b;
+}
+
+.docente-nav {
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.docente-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.docente-nav-link:hover {
+  background: #1e293b;
+}
+
+.docente-nav-link.active {
+  background: #22c55e;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.docente-main {
+  flex: 1;
+  padding: 24px;
+}
